@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Top page</title>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function(){
+
+                document.querySelector('#response').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    input.style.backgroundColor = 'f0f8ff';
+                    document.querySelector('#feedback1').innerHTML = 'Sended correctly';
+                    input.value = '';
+                })
+            })
+        </script>
+    </head>
+
+    <body class="d-flex h-80 text-center text-white" style="background-color:#696969">
+        <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+            <header class="p-5">
+                <div>
+                    <h3 class="float-md-start mb-0">Top page</h3>
+                    <nav class="nav justify-content-center float-md-end">
+                        <a class="nav-link active btn btn--top" aria-current="page" href="#">Home</a>
+                        <a class="nav-link btn btn--top" href="selfintroduce.html">Self introduce</a>
+                        <a class="nav-link btn btn--top" href="contact.html">Contact</a>
+                    </nav>
+                </div>      
+            </header>
+
+            <main class="p-5">
+                <h2 class="p-5">HOME</h2>
+                <p class="lead p-5">
+                    Hi, I'm Kou Furunaga and this is my homepage. Please note that it was designed for the purpose of improving my HTML and CSS coding skills and might contain some redundant elements and visual representations. 
+                    Feel free to browse and I would really appreciate if you could let us know your impressions from response form below. 
+                </p>                
+            </main>
+
+            <footer>
+                <input type="text"></input>
+                <button id="response" class="btn--footer">Send your impressions</button>
+
+                <p id="feedback1"></p>
+            </footer>   
+
+        </div>
+
+    </body>
+</html>
